@@ -1,0 +1,19 @@
+/* cursor.css */
+
+
+.cursor {
+    width: 20px; /* Largeur du curseur */
+    height: 20px; /* Hauteur du curseur */
+    background-color: rgba(255, 0, 0, 0.8); /* Couleur du curseur */
+    border-radius: 50%; /* Forme du curseur : cercle */
+    position: fixed; /* Position fixe pour suivre la souris */
+    pointer-events: none; /* Ignorer les événements de souris */
+    transform: translate(-50%, -50%); /* Centrer le curseur par rapport à la position de la souris */
+    transition: background-color 0.3s ease; /* Animation de la couleur */
+    box-shadow: 0 0 10px rgba(255, 0, 0, 0.5); /* Ombre du curseur */
+}
+
+.cursor:hover {
+    background-color: rgba(0, 255, 0, 0.8); /* Changer la couleur au survol */
+    box-shadow: 0 0 15px rgba(0, 255, 0, 0.5); /* Ombre au survol */
+}

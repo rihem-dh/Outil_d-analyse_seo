@@ -1,0 +1,16 @@
+.googlebutton{
+    background-color: transparent;
+    border: 1px solid #ccc;
+    padding: 10px 40px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: border-radius 0.3s ease;
+}
+
+.googlebutton:hover{
+    border-radius: 20px;
+   
+    
+}
+

@@ -1,0 +1,102 @@
+
+  
+  .box1 {
+    position: relative;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+        250deg,
+        transparent 30%,
+        rgba(255, 116, 37, 0.3) 30%
+      ); /* Trait incliné */
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-right: 100px;
+    margin: 0;
+  }
+  
+  .logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 150px;
+    height: auto;
+  }
+  
+  .image {
+    height: 50%;
+    width: auto;
+    right: 50px;
+  
+    animation: float 3s ease-in-out infinite; /* Animation continue */
+  }
+  
+  @keyframes float {
+    0%,
+    100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  
+  
+  .signup{
+    color: var(--primary-color);
+    font-family: "Rubik", sans-serif;
+    max-width: 70%;
+    padding: 0;
+    text-decoration: none;
+    font-size: 1.2em;
+  }
+  
+  .signup:hover{
+    color:white;
+    letter-spacing: 2px;
+  }
+  
+
+  .div1 {
+    display: flex;
+    gap: 50px; /* Adjust the gap as needed */
+    align-items: center;
+    .input-div {
+      flex: 1; /* This makes each input-div take up equal space */
+      display: flex;
+      align-items: center;
+    }
+    
+    .input-div .i {
+      flex-shrink: 0; /* Prevents the icon from shrinking */
+      margin-right: 10px; /* Adjust as needed */
+      
+    }
+    
+    .input-div .div {
+      flex: 1; /* Makes the input field take up the remaining space */
+    }
+    
+    .input-div .div h5 {
+      margin: 0; /* Adjust margin as needed */
+      
+
+      span{
+        font-size: 0.8rem;
+      }
+    }
+    
+    .input-div .div .input {
+      width: 100%;
+      padding: 0.5rem;
+      font-size: 1rem;
+      
+    }
+    
+  }
+
+  

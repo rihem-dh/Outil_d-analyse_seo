@@ -1,0 +1,125 @@
+:root {
+    --inter: "Inter", sans-serif;
+    --theme-font: var(--inter);
+    --theme-bg: #000000;
+    --theme-color: #ffffff;
+    --white: #ffffff;
+    --black: #000000;
+    --primary-color: #ff7425;
+    --secondary-color: #757575;
+    --tertiary-color: #0e0e0e;
+    --quaternary-color: #040404;
+    --quinary-color: #c1c1c1;
+    --senary-color: #191919;
+    --septenary-color: #101010;
+    --octonary-color: #1a1a1a;
+    --nonary-color: #d9d9d9;
+    --transition: all 0.3s ease-in-out;
+    --shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+    --shadow-secondary: 0 0 31px rgba(0, 0, 0, 0.1);
+  }
+  
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #f5f5f5;
+    border-radius: 50px;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: var(--primary-color);
+    border-radius: 50px;
+  }
+  
+  
+  
+  .home {
+    text-align: center;
+    z-index: 100;
+    position: relative; 
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh; 
+    background: radial-gradient(circle, #000000, #1e1e2e, #000000, #1e1e2e);
+    background-size: cover; 
+    background-position: center center; 
+    background-repeat: no-repeat; 
+    overflow: hidden; 
+    
+    
+  }
+  
+  
+  #particles canvas {
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    
+  }
+  
+  
+  
+  .homeContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+    text-transform: uppercase; 
+    font-family: "Rubik", sans-serif;
+    font-size: 1rem; 
+  }
+  
+  
+  .homeContent h1 {
+    margin-bottom: 30px;
+    font-size: 2.5rem; 
+    font-weight: 700; 
+  }
+  
+  .homeContent p {
+    text-transform: none; /* Désactive la transformation en majuscules pour le paragraphe */
+    
+    max-width: 500px; 
+    margin: 20px 0; 
+    line-height: 2; 
+    font-weight: 500; 
+  }
+  
+  
+  
+  .logo {
+    position: absolute;
+    top: 50px; /* Ajustez selon vos besoins */
+    left: 50px; /* Ajustez selon vos besoins */
+    width: 200px; /* Ajustez selon la taille du logo */
+    height: auto; /* Conserve les proportions de l'image */
+  }
+  
+  .cta-button {
+    
+    margin-top: 20px; /* Espace au-dessus du bouton */
+    padding: 10px 20px; /* Espacement intérieur du bouton */
+    font-size: 1.2rem; /* Taille de la police */
+    color: #e0e0e0; /* Couleur du texte */
+    background: transparent; /* Fond transparent par défaut */
+    border: 2px solid var(--primary-color); /* Bordure avec couleur primaire */
+    border-radius: 20px; /* Coins arrondis */
+    cursor: pointer; /* Curseur de pointeur pour indiquer que c'est cliquable */
+    box-shadow: 4px 4px 8px #1e1e2e; /* Ombre du bouton */
+    transition: background 0.3s ease, color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease; /* Animation des propriétés */
+    text-decoration: none !important;
+  }
+  
+  .cta-button:hover {
+    background: var(--primary-color); /* Fond de couleur primaire lors du survol */
+    color: #fff; /* Couleur du texte lors du survol */
+    border-color: var(--primary-color); /* Couleur de la bordure lors du survol */
+    transform: scale(1.05); /* Agrandir le bouton lors du survol */
+    box-shadow: 4px 4px 12px #1e1e2e; /* Ombre du bouton au survol */
+  }
+  

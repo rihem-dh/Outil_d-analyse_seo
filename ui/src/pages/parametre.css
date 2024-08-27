@@ -1,0 +1,147 @@
+:root {
+  --inter: "Inter", sans-serif;
+  --theme-font: var(--inter);
+  --theme-bg: #000000;
+  --theme-color: #ffffff;
+  --white: #ffffff;
+  --black: #000000;
+  --primary-color: #ff7425;
+  --secondary-color: #757575;
+  --tertiary-color: #0e0e0e;
+  --quaternary-color: #040404;
+  --quinary-color: #c1c1c1;
+  --senary-color: #191919;
+  --septenary-color: #101010;
+  --octonary-color: #1a1a1a;
+  --nonary-color: #d9d9d9;
+  --transition: all 0.3s ease-in-out;
+  --shadow: 0 0 12px rgba(0, 0, 0, 0.1);
+  --shadow-secondary: 0 0 31px rgba(0, 0, 0, 0.1);
+}
+
+.parametre {
+    
+    height: 100vh;
+    
+}
+
+.par-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    height: 100%;
+    padding: 20px;
+    transition: margin-left 0.3s ease;
+    margin-left: 0;
+  }
+  .navbar.open ~ .par-content {
+    margin-left: 300px;
+  }
+
+
+.settings-content {
+  text-align: center;
+  padding: 30px;
+  background-color: #f8f8f8;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.settings-content h2 {
+  font-size: 32px;
+  color: #333;
+  margin-bottom: 15px;
+  font-family: "Roboto", sans-serif;
+}
+
+.settings-content p {
+  font-size: 18px;
+  color: #555;
+  margin-bottom: 25px;
+  font-family: "Roboto", sans-serif;
+}
+
+.settings-options {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.settings-options form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.settings-options div {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  gap: 5px;
+}
+
+.settings-options label {
+  font-weight: 600;
+  color: #444;
+  font-size: 16px;
+}
+
+.settings-options input {
+  padding: 12px;
+
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.settings-options input:focus {
+  border-color: rgba(255, 116, 37, 0.5);
+  box-shadow: 0 0 8px rgba(255, 116, 37, 0.3);
+  outline: none;
+}
+
+.settings-options button {
+  padding: 12px 20px;
+  background-color: var(--primary-color);
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: background-color 0.3s, transform 0.2s;
+}
+
+.settings-options button:hover {
+  background-color: rgba(255, 116, 37, 0.8);
+  transform: translateY(-2px);
+}
+
+.settings-options button:active {
+  background-color: rgba(255, 116, 37, 0.9);
+  transform: translateY(0);
+}
+
+.error-message {
+  color: #dc3545;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
+
+.success-message {
+  color: #28a745;
+  font-size: 14px;
+  margin-top: 10px;
+  font-family: "Roboto", sans-serif;
+}
